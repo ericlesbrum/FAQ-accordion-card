@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /*Text*/
+    --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+    --Softred: hsl(14, 88%, 65%);
+    --Verydarkgrayishblue: hsl(237, 12%, 33%);
+    --Darkgrayishblue: hsl(240, 6%, 50%);
+
+    /*Dividers*/
+    --Lightgrayishblue: hsl(240, 5%, 91%);
+
+    /*Gradient*/
+    --Softviolet: hsl(273, 75%, 66%);
+    --Softblue: hsl(240, 73%, 65%);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +22,9 @@
 }
 
 body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,25 +32,90 @@ body {
     height: 100vh;
     width: 100%;
     flex-direction: column;
-}
-main{
-    display: flex;
-    justify-content: center;
+    background: linear-gradient(0deg, var(--Softblue), var(--Softviolet));
 }
 
-.content {
-    padding: 0 18px;
-    max-height: 0;
+main {
+    box-shadow: 10px 10px 50px var(--Verydarkdesaturatedblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    border-radius: 20px;
+    width: 1200px;
+    height: 530px;
+    margin: 20px;
+    padding: 20px;
+}
+
+main .images {
+    width: 50%;
+    padding: 20px;
+}
+
+main .faq {
+    width: 50%;
+}
+
+main .faq h1 {
+    color: var(--Verydarkdesaturatedblue);
+    font-size: 2.2rem;
+}
+
+main .faq ul {
+    list-style: none;
+    width: 80%;
+}
+
+main .faq ul li {
+    border-bottom: 1px solid var(--Lightgrayishblue);
 }
 
 .collapsible {
     cursor: pointer;
     border: none;
     text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0px 0;
 }
 
+.selected {
+    font-weight: 700;
+}
+
+.collapsible :hover {
+    color: var(--Softred);
+    font-weight: 700;
+}
+
+.collapsible img {
+    width: 15px;
+    height: 15px;
+}
+
+.collapsible span {
+    color: var(--Verydarkgrayishblue);
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    transition: all 0.2s ease-out;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 .attribution {
     font-size: 11px;
@@ -38,5 +123,5 @@ main{
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
 }
