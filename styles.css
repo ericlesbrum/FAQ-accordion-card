@@ -41,17 +41,39 @@ main {
     justify-content: center;
     align-items: center;
     background-color: white;
-    overflow: hidden;
     border-radius: 20px;
-    width: 1200px;
+    width: 1045px;
     height: 530px;
     margin: 20px;
-    padding: 20px;
 }
 
 main .images {
     width: 50%;
-    padding: 20px;
+}
+
+main .images .imagesContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+main .images .imagesContainer .woman {
+    margin-left: -85px;
+}
+
+main .images .bg-pattern {
+    position: absolute;
+    top: -560px;
+    left: 370px;
+}
+
+main .images .positions {
+    position: relative;
+}
+
+main .images .box {
+    position: absolute;
+    top: 135px;
+    left: -95px;
 }
 
 main .faq {
