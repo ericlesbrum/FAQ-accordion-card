@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import './css/desktop.css';
+@import './css/mobile.css';
 
 :root {
     /*Text*/
@@ -35,65 +37,6 @@ body {
     background: linear-gradient(0deg, var(--Softblue), var(--Softviolet));
 }
 
-main {
-    box-shadow: 10px 10px 50px var(--Verydarkdesaturatedblue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    width: 1045px;
-    height: 530px;
-    margin: 20px;
-}
-
-main .images {
-    width: 50%;
-}
-
-main .images .imagesContainer {
-    position: relative;
-    overflow: hidden;
-}
-
-main .images .imagesContainer .woman {
-    margin-left: -85px;
-}
-
-main .images .bg-pattern {
-    position: absolute;
-    top: -560px;
-    left: 370px;
-}
-
-main .images .positions {
-    position: relative;
-}
-
-main .images .box {
-    position: absolute;
-    top: 135px;
-    left: -95px;
-}
-
-main .faq {
-    width: 50%;
-}
-
-main .faq h1 {
-    color: var(--Verydarkdesaturatedblue);
-    font-size: 2.2rem;
-}
-
-main .faq ul {
-    list-style: none;
-    width: 80%;
-}
-
-main .faq ul li {
-    border-bottom: 1px solid var(--Lightgrayishblue);
-}
-
 .collapsible {
     cursor: pointer;
     border: none;
@@ -116,13 +59,6 @@ main .faq ul li {
 .collapsible img {
     width: 15px;
     height: 15px;
-}
-
-.collapsible span {
-    color: var(--Verydarkgrayishblue);
-    font-size: 1.2rem;
-    display: block;
-    margin-bottom: 20px;
 }
 
 .arrow {
