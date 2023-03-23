@@ -13,13 +13,39 @@
 
     main .imagesContainer {
         width: 50%;
+        height: 100%;
     }
 
-    main .imagesContainer .desktop{
+    main .imagesContainer .desktop {
         display: block;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
     }
 
-    main .imagesContainer .mobile{
+    main .imagesContainer .desktop .boxImage {
+        position: relative;
+    }
+
+    main .imagesContainer .desktop .box {
+        position: absolute;
+        top: 380px;
+        left: 110px;
+    }
+
+    main .imagesContainer .desktop .boxImage .woman {
+        position: absolute;
+        top: 60px;
+        left: -75px;
+    }
+
+    main .imagesContainer .desktop .boxImage .bgpattern {
+        position: absolute;
+        top: -280px;
+        left: -570px;
+    }
+
+    main .imagesContainer .mobile {
         display: none;
     }
 
