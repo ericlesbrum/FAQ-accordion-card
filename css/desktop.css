@@ -18,25 +18,28 @@
 
     main .imagesContainer .desktop {
         display: block;
-        overflow: hidden;
         height: 100%;
         width: 100%;
+        position: relative;
     }
 
     main .imagesContainer .desktop .boxImage {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
         position: relative;
     }
 
     main .imagesContainer .desktop .box {
         position: absolute;
-        top: 380px;
-        left: 110px;
+        top: 200px;
+        left: -95px;
     }
 
     main .imagesContainer .desktop .boxImage .woman {
         position: absolute;
-        top: 60px;
-        left: -75px;
+        top: 65px;
+        left: -85px;
     }
 
     main .imagesContainer .desktop .boxImage .bgpattern {
